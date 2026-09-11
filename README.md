@@ -1,1 +1,17 @@
-# Checkpoint-Mi-primer-laboratorio-seguro-de-ciberseguridad
+# Checkpoint-Mi-primer-laboratorio-seguro-de-ciberseguridad 
+DYLAN SANTIAGO CARMONA AREVALO 
+Mi primer laboratorio seguro de ciberseguridad
+10/09/2026
+1. Fundación: VirtualBox y Red Aislada
+La máquina virtual fue configurada utilizando el modo [NAT/Red Interna]. Esta configuración permite controlar la comunicación de la máquina virtual con la red y reduce los riesgos para el equipo Host. Se evita utilizar el modo Puente (Bridge), ya que este podría hacer que la máquina virtual sea visible directamente en la red local.
+2. Capa Windows: Usuarios y Actualizaciones
+Se creó un usuario estándar independiente de la cuenta de administrador para realizar las prácticas del laboratorio. Esto permite aplicar el principio de menor privilegio, evitando utilizar permisos administrativos cuando no sean necesarios.
+Windows Update
+Se verificó Windows Update para comprobar que el sistema operativo cuenta con las actualizaciones disponibles. Mantener el sistema actualizado ayuda a corregir vulnerabilidades y mejorar la seguridad del laboratorio.
+3. Capa Linux: Permisos y Gestión
+Se creó un archivo de prueba llamado prueba.txt y se utilizó el comando ls -l para visualizar sus permisos, propietario y grupo.
+Actualización de paquetes
+Se utilizó la terminal de Kali Linux para comprobar la disponibilidad de actualizaciones mediante el comando sudo apt update.
+4. La Red de Seguridad: Snapshot Inicial
+Después de completar la configuración inicial y las medidas básicas de seguridad, se creó una instantánea de la máquina virtual llamada “Clean Install - Hardening applied”.
+La instantánea permite conservar un estado funcional y seguro de la máquina virtual. En caso de que una práctica posterior cause algún problema, será posible regresar al estado guardado.
